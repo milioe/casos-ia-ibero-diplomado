@@ -13,3 +13,6 @@ local.settings.json
 02-VisionApp/
 03-Agent/
 04-EmbeddedAgent/
+
+# all .DS_Store files in folders o subfolders
+**/.DS_Store
