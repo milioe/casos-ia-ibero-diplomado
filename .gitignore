@@ -17,3 +17,7 @@ local.settings.json
 06-Routing/
 07-OpenSource/
 08-RAG-Assistant/
+
+
+# incluir el .env.example
+!.env.example
