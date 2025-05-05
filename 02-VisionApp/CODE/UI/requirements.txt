@@ -1,0 +1,3 @@
+gradio>=4.19.2
+pandas>=2.0.0
+requests>=2.31.0 

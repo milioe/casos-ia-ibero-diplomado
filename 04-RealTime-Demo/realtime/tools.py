@@ -33,9 +33,6 @@ async def draw_plotly_chart_handler(message: str, plotly_json_fig):
 
 draw_plotly_chart = (draw_plotly_chart_def, draw_plotly_chart_handler)
 
-# BASE_URL = "http://localhost:8020"
-BASE_URL = "http://localhost:8020"
-
 
 # HERRAMIENTAS IBERO
 ibero_calendar_def = {
