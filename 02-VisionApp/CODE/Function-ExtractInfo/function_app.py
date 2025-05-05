@@ -37,7 +37,7 @@ def process_document(images_binary: List[bytes]) -> DocumentInfo:
         # Inicializar el cliente de OpenAI con API key y organización
         client = OpenAI(
             api_key=os.getenv("OPENAI_API_KEY"),
-            organization="org-1ZL4StSvcHlvLHFdMb1m2kPS"
+            organization=os.getenv("OPENAI_ORG_ID")
         )
 
         # Crear la lista de contenido con todas las imágenes
