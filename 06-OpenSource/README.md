@@ -120,11 +120,8 @@ python structured-outputs.py
 ```
 Demuestra cómo obtener respuestas en formato JSON o estructurado.
 
-### 3. Notebook con SDK
-```bash
-jupyter notebook ollama_sdk.ipynb
-```
-Ejemplos más avanzados usando el SDK de Ollama.
+### 3. Notebook de Ejemplos
+El archivo `ollama_sdk.ipynb` contiene ejemplos más avanzados usando el SDK de Ollama. Puedes ir ejecutando celda por celda para ver diferentes formas de interactuar con los modelos.
 
 ## Comandos Útiles de Ollama
 
