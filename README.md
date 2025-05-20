@@ -112,16 +112,8 @@ Cada proyecto contiene:
 - 🔑 Algunos proyectos requieren configuración adicional (API keys, credenciales)
 - 🔄 Los proyectos están diseñados para ser modulares e independientes
 
-## 🚀 Próximos Pasos
-- 📝 Mejoras en la documentación de cada proyecto
-- ✨ Implementación de nuevos casos de uso
-- 🔄 Integración con servicios adicionales
-- ⚡ Optimización de rendimiento
-- 📚 Ejemplos adicionales y tutoriales
 
-## 🤝 Contribuciones
-Se aceptan contribuciones mediante Pull Requests. Por favor, asegúrate de:
-- 📝 Seguir las guías de estilo del proyecto
-- 📖 Documentar adecuadamente los cambios
-- 🔄 Mantener la estructura modular
-- ✅ Probar los cambios antes de enviarlos
+## 📬 Contacto
+Para cualquier tema relacionado con este repositorio, puedes contactar a:
+- 📧 Email: emilio@milioe.com
+
