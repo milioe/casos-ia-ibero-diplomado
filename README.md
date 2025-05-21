@@ -84,14 +84,6 @@ OPENAI_ORG_ID=tu-organization-id-de-openai
 # Google API Keys (Requerido solo para proyectos 03-Agent y 05-PhoneAgent)
 GOOGLE_SHEETS_URL=url-de-tu-google-sheet
 GOOGLE_CALENDAR_ID=id-de-tu-calendario
-
-# Azure Configuration (Requerido solo para proyectos 02-VisionApp y 05-PhoneAgent)
-AZURE_STORAGE_CONNECTION_STRING=tu-connection-string
-AZURE_FUNCTION_APP_NAME=nombre-de-tu-function-app
-
-# Otros servicios
-PORT=8000
-ENVIRONMENT=development
 ```
 
 Copia el archivo `env.example` a `.env` y reemplaza los valores con tus propias credenciales. Ten en cuenta que:
