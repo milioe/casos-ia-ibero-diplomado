@@ -13,11 +13,14 @@ local.settings.json
 # all .DS_Store files in folders o subfolders
 **/.DS_Store
 
-05-PhoneAgent/
-06-Routing/
-07-OpenSource/
-08-RAG-Assistant/
+# Folders to ignore
+07-RAGAssistant/
+
 
 
 # incluir el .env.example
 !.env.example
+
+
+# .vscode
+.vscode/
