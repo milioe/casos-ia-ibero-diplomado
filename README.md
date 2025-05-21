@@ -91,6 +91,14 @@ Copia el archivo `env.example` a `.env` y reemplaza los valores con tus propias 
 - 📝 Las demás variables son necesarias solo para proyectos específicos
 - 📚 Consulta el README de cada proyecto para ver qué variables son necesarias
 
+> ℹ️ **Google Sheets**: Para los proyectos que utilizan Google Sheets, usa la siguiente URL en la variable `GOOGLE_SHEETS_URL` del archivo `.env`:
+> 
+> ```
+> GOOGLE_SHEETS_URL=https://docs.google.com/spreadsheets/d/1aFL9U_Z556GnURZ-K35zV4bKsheHHfwMp4KNCty0lEg/edit?usp=sharing
+> ```
+> 
+> Esta es la hoja de cálculo utilizada durante las clases del diplomado.
+
 ### 📁 Estructura de Carpetas
 Cada proyecto contiene:
 - 📖 `README.md` con instrucciones específicas
