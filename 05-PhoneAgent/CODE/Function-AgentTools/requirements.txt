@@ -1,0 +1,24 @@
+# DO NOT include azure-functions-worker in this file
+# The Python Worker is managed by Azure Functions platform
+# Manually managing azure-functions-worker may cause unexpected issues
+
+# Google API y autenticación
+google-auth>=2.22.0
+google-auth-oauthlib>=1.0.0
+google-auth-httplib2>=0.1.0
+google-api-python-client>=2.86.0
+gspread>=5.10.0
+oauth2client>=4.1.3
+
+# Manejo de datos
+pandas>=1.5.3
+
+# Azure Functions
+azure-functions>=1.15.0
+
+# Utilidades
+python-dotenv>=1.0.0
+requests>=2.31.0
+
+# Para manejo de correo electrónico
+# Nota: smtplib, email.mime.* son parte de la biblioteca estándar de Python
