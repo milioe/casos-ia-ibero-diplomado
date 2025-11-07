@@ -1,0 +1,6 @@
+langgraph
+langgraph-cli[inmem]
+langchain
+langchain-tavily
+langchain-core
+langchain-openai
