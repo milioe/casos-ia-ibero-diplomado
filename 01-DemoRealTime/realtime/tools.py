@@ -1,408 +1,344 @@
-import asyncio
 import chainlit as cl
+import plotly
 from datetime import datetime
 from typing import Optional, List
-import random
-import os
-from twilio.rest import Client
 
 
-# Herramienta para mostrar QR de Alexa
-display_alexa_qr_def = {
-    "name": "display_alexa_qr",
-    "description": "Muestra el código QR para sincronizar Alexa de Amazon con Cable+",
+draw_plotly_chart_def = {
+    "name": "draw_plotly_chart",
+    "description": "Draws a Plotly chart based on the provided JSON figure and displays it with an accompanying message.",
     "parameters": {
         "type": "object",
         "properties": {
             "message": {
                 "type": "string",
-                "description": "Mensaje a mostrar junto con el QR"
+                "description": "The message to display alongside the chart"
+            },
+            "plotly_json_fig": {
+                "type": "string",
+                "description": "A JSON string representing the Plotly figure to be drawn"
+            }
+        },
+        "required": ["message", "plotly_json_fig"]
+    }
+}
+
+async def draw_plotly_chart_handler(message: str, plotly_json_fig):
+    fig = plotly.io.from_json(plotly_json_fig)
+    elements = [cl.Plotly(name="chart", figure=fig, display="inline")]
+
+    await cl.Message(content=message, elements=elements).send()
+
+draw_plotly_chart = (draw_plotly_chart_def, draw_plotly_chart_handler)
+
+
+# HERRAMIENTAS IBERO
+ibero_calendar_def = {
+    "name": "display_ibero_calendar",
+    "description": "Displays the Ibero academic calendar for the 2025 cycle.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "message": {
+                "type": "string",
+                "description": "The message to display alongside the calendar PDF."
             }
         },
         "required": ["message"]
     }
 }
 
-async def display_alexa_qr(message: str):
-    """Muestra el QR code para sincronizar Alexa."""
-    image = cl.Image(
-        path="/Users/emiliosandoval/Documents/HD/Demo-Realtime/assets/alexaqr.png",
-        name="alexa_qr_code",
-        display="inline"
-    )
-    await cl.Message(content=message, elements=[image]).send()
-    return "QR de Alexa mostrado"
-
-
-# Herramienta para mostrar contrato de servicios PDF
-display_contract_pdf_def = {
-    "name": "display_contract_pdf",
-    "description": "Muestra el contrato de servicios de cable en formato PDF",
-    "parameters": {
-        "type": "object",
-        "properties": {
-            "message": {
-                "type": "string",
-                "description": "Mensaje a mostrar junto con el contrato"
-            }
-        },
-        "required": ["message"]
-    }
-}
-
-async def display_contract_pdf(message: str):
-    """Muestra el contrato de servicios PDF."""
+async def display_ibero_calendar(message: str):
+    """
+    Displays the Ibero academic calendar PDF.
+    """
     elements = [
         cl.Pdf(
-            name="contrato_servicios",
+            name="ibero_calendar",
             display="inline",
-            path="/Users/emiliosandoval/Documents/HD/Demo-Realtime/assets/Contrato_Servicios_Cable_Mas.pdf"
+            path="/Users/emiliosandoval/Documents/ibero/casos-ia-ibero-diplomado/01-DemoRealTime/assets/calendario2025.pdf"
         )
     ]
     await cl.Message(content=message, elements=elements).send()
-    return "Contrato PDF mostrado"
 
+ibero_calendar_tool = (ibero_calendar_def, display_ibero_calendar)
 
-# Herramienta para mostrar estado de cuenta
-display_account_status_def = {
-    "name": "display_account_status",
-    "description": "Muestra el estado de cuenta visual del usuario del mes de agosto",
+parking_map_def = {
+    "name": "display_parking_map",
+    "description": "Displays the Ibero parking map image showing the different parking areas on campus.",
     "parameters": {
         "type": "object",
         "properties": {
             "message": {
                 "type": "string",
-                "description": "Mensaje a mostrar junto con el estado de cuenta"
+                "description": "The message to display alongside the parking map."
             }
         },
         "required": ["message"]
     }
 }
 
-async def display_account_status(message: str):
-    """Muestra el estado de cuenta visual."""
+async def display_parking_map(message: str):
+    """
+    Displays the Ibero parking map image.
+    """
     image = cl.Image(
-        path="/Users/emiliosandoval/Documents/HD/Demo-Realtime/assets/estado_cuenta.png",
-        name="estado_cuenta",
+        path="/Users/emiliosandoval/Documents/ibero/casos-ia-ibero-diplomado/01-DemoRealTime/assets/mapa-estacionamiento.png",
+        name="parking_map",
         display="inline"
     )
-    await cl.Message(content=message, elements=[image]).send()
-    return "Estado de cuenta mostrado"
+    await cl.Message(
+        content=message,
+        elements=[image],
+    ).send()
 
+parking_map_tool = (parking_map_def, display_parking_map)
 
-# Herramienta para mostrar menú home
-display_home_menu_def = {
-    "name": "display_home_menu",
-    "description": "Muestra el menú principal/home de la pantalla del decodificador",
+registration_form_def = {
+    "name": "display_registration_form",
+    "description": "Displays the Ibero registration form PDF document.",
     "parameters": {
         "type": "object",
         "properties": {
             "message": {
                 "type": "string",
-                "description": "Mensaje a mostrar junto con el menú"
+                "description": "The message to display alongside the registration form PDF."
             }
         },
         "required": ["message"]
     }
 }
 
-async def display_home_menu(message: str):
-    """Muestra el menú home de la pantalla."""
-    image = cl.Image(
-        path="/Users/emiliosandoval/Documents/HD/Demo-Realtime/assets/menuhome.png",
-        name="menu_home",
-        display="inline"
-    )
-    await cl.Message(content=message, elements=[image]).send()
-    return "Menú home mostrado"
+async def display_registration_form(message: str):
+    """
+    Displays the Ibero registration form PDF.
+    """
+    elements = [
+        cl.Pdf(
+            name="registration_form",
+            display="inline",
+            path="/Users/emiliosandoval/Documents/ibero/casos-ia-ibero-diplomado/01-DemoRealTime/assets/SOLICITUD DE REGISTRO.pdf"
+        )
+    ]
+    await cl.Message(content=message, elements=elements).send()
 
+registration_form_tool = (registration_form_def, display_registration_form)
 
-# Herramienta para mostrar menú streaming
-display_streaming_menu_def = {
-    "name": "display_streaming_menu",
-    "description": "Muestra el menú de streaming de la televisión con las aplicaciones disponibles",
+registration_video_def = {
+    "name": "display_registration_video",
+    "description": "Displays a tutorial video about first-round registration at Ibero.",
     "parameters": {
         "type": "object",
         "properties": {
             "message": {
                 "type": "string",
-                "description": "Mensaje a mostrar junto con el menú de streaming"
+                "description": "The message to display alongside the registration tutorial video."
             }
         },
         "required": ["message"]
     }
 }
 
-async def display_streaming_menu(message: str):
-    """Muestra el menú de streaming de la TV."""
-    image = cl.Image(
-        path="/Users/emiliosandoval/Documents/HD/Demo-Realtime/assets/menustraming.png",
-        name="menu_streaming",
-        display="inline"
-    )
-    await cl.Message(content=message, elements=[image]).send()
-    return "Menú streaming mostrado"
-
-
-# Herramienta para mostrar video tutorial Vix+Disney
-display_vix_tutorial_def = {
-    "name": "display_vix_tutorial",
-    "description": "Muestra el video tutorial de cómo enlazar Vix con Disney+",
-    "parameters": {
-        "type": "object",
-        "properties": {
-            "message": {
-                "type": "string",
-                "description": "Mensaje a mostrar junto con el video tutorial"
-            }
-        },
-        "required": ["message"]
-    }
-}
-
-async def display_vix_tutorial(message: str):
-    """Muestra el video tutorial de Vix+Disney."""
+async def display_registration_video(message: str):
+    """
+    Displays the Ibero registration tutorial video.
+    """
     video = cl.Video(
-        path="/Users/emiliosandoval/Documents/HD/Demo-Realtime/assets/VixVideo.mp4",
-        name="vix_disney_tutorial",
+        path="/Users/emiliosandoval/Documents/ibero/casos-ia-ibero-diplomado/01-DemoRealTime/assets/Te ayudamos en tu reinscripción de primera vuelta.mp4",
+        name="registration_video",
         display="inline"
     )
     await cl.Message(content=message, elements=[video]).send()
-    return "Video tutorial Vix+Disney mostrado"
 
+registration_video_tool = (registration_video_def, display_registration_video)
 
-# Herramienta para mostrar imagen del control remoto
-display_remote_control_def = {
-    "name": "display_remote_control",
-    "description": "Muestra la imagen guía del control remoto de Cable+",
+# HERRAMIENTAS DE TEXTO PARA INFORMACIÓN DE CONTACTO
+
+escolares_email_def = {
+    "name": "display_escolares_email",
+    "description": "Displays the email contact for Servicios Escolares at Ibero.",
     "parameters": {
         "type": "object",
         "properties": {
             "message": {
                 "type": "string",
-                "description": "Mensaje a mostrar junto con la imagen del control remoto"
+                "description": "The message to display alongside the email contact."
             }
         },
         "required": ["message"]
     }
 }
 
-async def display_remote_control(message: str):
-    """Muestra la imagen del control remoto."""
-    image = cl.Image(
-        path="/Users/emiliosandoval/Documents/HD/Demo-Realtime/assets/ControlRemotoGuia.png",
-        name="control_remoto_guia",
-        display="inline"
+async def display_escolares_email(message: str):
+    """
+    Displays the email for Servicios Escolares.
+    """
+    text = cl.Text(
+        name="escolares_email",
+        content="servicios.escolares@ibero.mx",
+        display="inline",
+        language="markdown"
     )
-    await cl.Message(content=message, elements=[image]).send()
-    return "Imagen del control remoto mostrada"
+    await cl.Message(content=message, elements=[text]).send()
 
+escolares_email_tool = (escolares_email_def, display_escolares_email)
 
-# Herramienta para mostrar pantalla de login de Netflix
-display_netflix_login_def = {
-    "name": "display_netflix_login",
-    "description": "Muestra la pantalla de login de Netflix para guiar al usuario",
+escolares_phone_def = {
+    "name": "display_escolares_phone",
+    "description": "Displays the phone number for Servicios Escolares at Ibero.",
     "parameters": {
         "type": "object",
         "properties": {
             "message": {
                 "type": "string",
-                "description": "Mensaje a mostrar junto con la pantalla de login"
+                "description": "The message to display alongside the phone number."
             }
         },
         "required": ["message"]
     }
 }
 
-async def display_netflix_login(message: str):
-    """Muestra la pantalla de login de Netflix."""
-    image = cl.Image(
-        path="/Users/emiliosandoval/Documents/HD/Demo-Realtime/assets/NetflixPantallaLogin.png",
-        name="netflix_login",
-        display="inline"
+async def display_escolares_phone(message: str):
+    """
+    Displays the phone number for Servicios Escolares.
+    """
+    text = cl.Text(
+        name="escolares_phone",
+        content="5559504093",
+        display="inline",
+        language="markdown"
     )
-    await cl.Message(content=message, elements=[image]).send()
-    return "Pantalla de login de Netflix mostrada"
+    await cl.Message(content=message, elements=[text]).send()
 
+escolares_phone_tool = (escolares_phone_def, display_escolares_phone)
 
-# Herramienta para mostrar pantalla de código de Netflix
-display_netflix_code_def = {
-    "name": "display_netflix_code",
-    "description": "Muestra la pantalla donde se ingresa el código de activación de Netflix",
+deportes_email_def = {
+    "name": "display_deportes_email",
+    "description": "Displays the email contact for Hugo Martínez, who handles sports related inquiries at Ibero.",
     "parameters": {
         "type": "object",
         "properties": {
             "message": {
                 "type": "string",
-                "description": "Mensaje a mostrar junto con la pantalla de código"
+                "description": "The message to display alongside the email contact."
             }
         },
         "required": ["message"]
     }
 }
 
-async def display_netflix_code(message: str):
-    """Muestra la pantalla de código de activación de Netflix."""
-    image = cl.Image(
-        path="/Users/emiliosandoval/Documents/HD/Demo-Realtime/assets/NetflixCodigo.png",
-        name="netflix_code",
-        display="inline"
+async def display_deportes_email(message: str):
+    """
+    Displays the email for Hugo Martínez (sports contact).
+    """
+    text = cl.Text(
+        name="deportes_email",
+        content="hugo.martinez@ibero.mx",
+        display="inline",
+        language="markdown"
     )
-    await cl.Message(content=message, elements=[image]).send()
-    return "Pantalla de código de Netflix mostrada"
+    await cl.Message(content=message, elements=[text]).send()
 
+deportes_email_tool = (deportes_email_def, display_deportes_email)
 
-# Herramienta para mostrar pantalla de inicio de Netflix
-display_netflix_home_def = {
-    "name": "display_netflix_home",
-    "description": "Muestra la pantalla de inicio de Netflix una vez activado correctamente",
+deportes_phone_def = {
+    "name": "display_deportes_phone",
+    "description": "Displays the phone number for Hugo Martínez, who handles sports related inquiries at Ibero.",
     "parameters": {
         "type": "object",
         "properties": {
             "message": {
                 "type": "string",
-                "description": "Mensaje a mostrar junto con la pantalla de inicio"
+                "description": "The message to display alongside the phone number."
             }
         },
         "required": ["message"]
     }
 }
 
-async def display_netflix_home(message: str):
-    """Muestra la pantalla de inicio de Netflix activado."""
-    image = cl.Image(
-        path="/Users/emiliosandoval/Documents/HD/Demo-Realtime/assets/NetflixHome.png",
-        name="netflix_home",
-        display="inline"
+async def display_deportes_phone(message: str):
+    """
+    Displays the phone number for Hugo Martínez (sports contact).
+    """
+    text = cl.Text(
+        name="deportes_phone",
+        content="55 4514 9423",
+        display="inline",
+        language="markdown"
     )
-    await cl.Message(content=message, elements=[image]).send()
-    return "Pantalla de inicio de Netflix mostrada"
+    await cl.Message(content=message, elements=[text]).send()
 
+deportes_phone_tool = (deportes_phone_def, display_deportes_phone)
 
-# Herramienta para enviar SMS de confirmación de cita
-send_sms_appointment_def = {
-    "name": "send_sms_appointment",
-    "description": "Envía SMS de confirmación para cita de soporte técnico con folio generado al número registrado del cliente",
+campus_location_def = {
+    "name": "display_campus_location",
+    "description": "Displays the address and location information for the Ibero campus.",
     "parameters": {
         "type": "object",
         "properties": {
-            "date": {
+            "message": {
                 "type": "string",
-                "description": "Fecha de la cita (ej: 15 de enero)"
-            },
-            "time": {
-                "type": "string",
-                "description": "Hora de la cita (ej: 2:00 PM)"
-            },
-            "problem": {
-                "type": "string",
-                "description": "Descripción del problema técnico"
+                "description": "The message to display alongside the campus location."
             }
         },
-        "required": ["date", "time", "problem"]
+        "required": ["message"]
     }
 }
 
-async def send_sms_appointment(date: str, time: str, problem: str):
-    """Envía SMS de confirmación de cita de soporte técnico."""
-    # Número de teléfono hardcodeado del cliente
-    phone_number = "+525617696010"
-    
-    try:
-        # Generar folio aleatorio de 5 dígitos
-        folio = random.randint(10000, 99999)
-        
-        # Mensaje predeterminado más amigable
-        message = f"🎉 ¡Hola! Tu cita con Cable+ está confirmada\n\n📋 Folio: {folio}\n📅 Fecha: {date}\n🕐 Hora: {time}\n🔧 Servicio: {problem}\n\n👨‍🔧 Nuestro técnico llegará puntualmente a tu domicilio. Por favor ten a la mano tu identificación oficial.\n\n¿Dudas? Llámanos al 📞 800-CABLEPLUS\n\n¡Gracias por confiar en nosotros! 😊"
-        
-        # Configurar Twilio (usar variables de entorno)
-        account_sid = os.getenv('TWILIO_ACCOUNT_SID')
-        auth_token = os.getenv('TWILIO_AUTH_TOKEN')
-        from_number = os.getenv('TWILIO_PHONE_NUMBER')
-        
-        if not all([account_sid, auth_token, from_number]):
-            await cl.Message(content=f"🎉 ¡Listo! Tu cita ha sido agendada exitosamente\n\n📋 **Folio:** {folio}\n📱 **SMS enviado al número registrado**\n📅 **Fecha y hora:** {date} a las {time}\n🔧 **Servicio:** {problem}\n\n✨ Te enviaremos un SMS de confirmación muy pronto. ¡Nos vemos!").send()
-            return f"Cita agendada exitosamente con folio {folio} (simulación)"
-        
-        client = Client(account_sid, auth_token)
-        
-        # Enviar SMS
-        message_obj = client.messages.create(
-            body=message,
-            from_=from_number,
-            to=phone_number
-        )
-    
-        
-        return f"Cita agendada exitosamente con folio {folio}"
-        
-    except Exception as e:
-        # En caso de error, simular el envío
-        folio = random.randint(10000, 99999)
-        await cl.Message(content=f"🎉 ¡Listo! Tu cita ha sido agendada exitosamente\n\n📋 **Folio:** {folio}\n📱 **SMS enviado al número registrado**\n📅 **Fecha y hora:** {date} a las {time}\n🔧 **Servicio:** {problem}\n\n✨ Te enviaremos un SMS de confirmación muy pronto. ¡Nos vemos!").send()
-        return f"Cita agendada exitosamente con folio {folio}"
+async def display_campus_location(message: str):
+    """
+    Displays the Ibero campus location information.
+    """
+    text = cl.Text(
+        name="campus_location",
+        content="Prolongación Paseo de la Reforma 880, Lomas de Santa Fe, Ciudad de México, C.P. 01219",
+        display="inline",
+        language="markdown"
+    )
+    await cl.Message(content=message, elements=[text]).send()
 
+campus_location_tool = (campus_location_def, display_campus_location)
 
-# Herramienta para enviar SMS con código de activación de Netflix
-send_netflix_code_sms_def = {
-    "name": "send_netflix_code_sms",
-    "description": "Envía SMS con el código de activación de Netflix al número registrado del cliente",
+ibero_website_def = {
+    "name": "display_ibero_website",
+    "description": "Displays the official website URL for Universidad Iberoamericana.",
     "parameters": {
         "type": "object",
-        "properties": {},
-        "required": []
+        "properties": {
+            "message": {
+                "type": "string",
+                "description": "The message to display alongside the website URL."
+            }
+        },
+        "required": ["message"]
     }
 }
 
-async def send_netflix_code_sms():
-    """Envía SMS con código de activación de Netflix."""
-    # Número de teléfono hardcodeado del cliente
-    phone_number = "+525617696010"
-    # Código de activación hardcodeado
-    activation_code = "76203"
-    
-    try:
-        # Mensaje con código de activación
-        message = f"🎬 Cable+ - Código de activación Netflix\n\nTu código de activación es: {activation_code}\n\nIngresa este código en la pantalla de Netflix para activar tu servicio.\n\n¿Necesitas ayuda? Llámanos al 📞 800-CABLEPLUS\n\n¡Disfruta Netflix! 🍿"
-        
-        # Configurar Twilio (usar variables de entorno)
-        account_sid = os.getenv('TWILIO_ACCOUNT_SID')
-        auth_token = os.getenv('TWILIO_AUTH_TOKEN')
-        from_number = os.getenv('TWILIO_PHONE_NUMBER')
-        
-        if not all([account_sid, auth_token, from_number]):
-            await cl.Message(content=f"📱 ¡Listo! Te he enviado el código de activación de Netflix\n\n🔢 **Código:** {activation_code}\n📱 **SMS enviado al número registrado**\n\n✨ Deberías recibirlo en unos segundos. ¡A disfrutar Netflix!").send()
-            return f"SMS con código de Netflix enviado (simulación)"
-        
-        client = Client(account_sid, auth_token)
-        
-        # Enviar SMS
-        message_obj = client.messages.create(
-            body=message,
-            from_=from_number,
-            to=phone_number
-        )
-        
-        
-        return f"SMS con código de Netflix enviado exitosamente"
-        
-    except Exception as e:
-        # En caso de error, simular el envío
-        await cl.Message(content=f"📱 ¡Listo! Te he enviado el código de activación de Netflix\n\n🔢 **Código:** {activation_code}\n📱 **SMS enviado al número registrado**\n\n✨ Deberías recibirlo muy pronto. ¡A disfrutar Netflix!").send()
-        return f"SMS con código de Netflix enviado"
+async def display_ibero_website(message: str):
+    """
+    Displays the official Ibero website URL.
+    """
+    text = cl.Text(
+        name="ibero_website",
+        content="https://ibero.mx/",
+        display="inline",
+        language="markdown"
+    )
+    await cl.Message(content=message, elements=[text]).send()
 
+ibero_website_tool = (ibero_website_def, display_ibero_website)
 
+# Lista de herramientas disponibles
 tools = [
-    (display_alexa_qr_def, display_alexa_qr),
-    (display_contract_pdf_def, display_contract_pdf),
-    (display_account_status_def, display_account_status),
-    (display_home_menu_def, display_home_menu),
-    (display_streaming_menu_def, display_streaming_menu),
-    (display_vix_tutorial_def, display_vix_tutorial),
-    (display_remote_control_def, display_remote_control),
-    (display_netflix_login_def, display_netflix_login),
-    (display_netflix_code_def, display_netflix_code),
-    (display_netflix_home_def, display_netflix_home),
-    (send_sms_appointment_def, send_sms_appointment),
-    (send_netflix_code_sms_def, send_netflix_code_sms),
+    draw_plotly_chart,
+    ibero_calendar_tool,
+    parking_map_tool,
+    registration_form_tool,
+    registration_video_tool,
+    escolares_email_tool,
+    escolares_phone_tool,
+    deportes_email_tool,
+    deportes_phone_tool,
+    campus_location_tool,
+    ibero_website_tool
 ]

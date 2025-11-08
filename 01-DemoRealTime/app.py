@@ -72,7 +72,7 @@ async def setup_openai_realtime():
 @cl.on_chat_start
 async def start():
     await cl.Message(
-        content="¡Hola! Bienvenido a Cable+. Soy Sofía, tu asistente virtual. ¿En qué te puedo ayudar? Presiona `P` para hablar."
+        content="¡Hola! Soy Iber.IA ¿En qué te puedo ayudar? Presiona `P` para hablar."
     ).send()
     await setup_openai_realtime()
 
