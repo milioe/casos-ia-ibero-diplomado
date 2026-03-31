@@ -56,7 +56,7 @@ async def display_ibero_calendar(message: str):
         cl.Pdf(
             name="ibero_calendar",
             display="inline",
-            path="/Users/emiliosandoval/Documents/ibero/casos-ia-ibero-diplomado/01-DemoRealTime/assets/calendario2025.pdf"
+            path="/Users/emiliosandoval/Documents/ibero/casos-ia-ibero-diplomado/Unidad 5/01-DemoRealTime/assets/calendario2025.pdf"
         )
     ]
     await cl.Message(content=message, elements=elements).send()
@@ -83,7 +83,7 @@ async def display_parking_map(message: str):
     Displays the Ibero parking map image.
     """
     image = cl.Image(
-        path="/Users/emiliosandoval/Documents/ibero/casos-ia-ibero-diplomado/01-DemoRealTime/assets/mapa-estacionamiento.png",
+        path="/Users/emiliosandoval/Documents/ibero/casos-ia-ibero-diplomado/Unidad 5/01-DemoRealTime/assets/mapa-estacionamiento.png",
         name="parking_map",
         display="inline"
     )
@@ -117,7 +117,7 @@ async def display_registration_form(message: str):
         cl.Pdf(
             name="registration_form",
             display="inline",
-            path="/Users/emiliosandoval/Documents/ibero/casos-ia-ibero-diplomado/01-DemoRealTime/assets/SOLICITUD DE REGISTRO.pdf"
+            path="/Users/emiliosandoval/Documents/ibero/casos-ia-ibero-diplomado/Unidad 5/01-DemoRealTime/assets/SOLICITUD DE REGISTRO.pdf"
         )
     ]
     await cl.Message(content=message, elements=elements).send()
@@ -144,7 +144,7 @@ async def display_registration_video(message: str):
     Displays the Ibero registration tutorial video.
     """
     video = cl.Video(
-        path="/Users/emiliosandoval/Documents/ibero/casos-ia-ibero-diplomado/01-DemoRealTime/assets/Te ayudamos en tu reinscripción de primera vuelta.mp4",
+        path="/Users/emiliosandoval/Documents/ibero/casos-ia-ibero-diplomado/Unidad 5/01-DemoRealTime/assets/Te ayudamos en tu reinscripción de primera vuelta.mp4",
         name="registration_video",
         display="inline"
     )

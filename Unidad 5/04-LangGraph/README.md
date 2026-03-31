@@ -65,7 +65,7 @@ pip install langgraph-cli
 
 2. **Estructura del proyecto**:
 ```
-04-LangGraph/
+Unidad 5/04-LangGraph/
 ├── graph.py          # Definición del agente
 ├── langgraph.json    # Configuración del proyecto
 ├── requirements.txt  # Dependencias
