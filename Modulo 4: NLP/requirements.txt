@@ -1,0 +1,14 @@
+pypdf
+img2pdf
+matplotlib
+wordcloud
+easyocr
+pillow
+pandas
+tqdm
+numpy
+pymupdf
+pdfplumber
+spacy>=3.8.0,<4
+# PyPI solo tiene es-core-news-sm hasta 3.1; para spaCy 3.8+ usa el wheel oficial:
+https://github.com/explosion/spacy-models/releases/download/es_core_news_sm-3.8.0/es_core_news_sm-3.8.0-py3-none-any.whl
