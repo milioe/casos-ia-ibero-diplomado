@@ -1,0 +1,1435 @@
+{
+  "archivo_fuente": "output/texto_pypdf.txt",
+  "por_página": [
+    {
+      "página": 1,
+      "montos": []
+    },
+    {
+      "página": 2,
+      "montos": []
+    },
+    {
+      "página": 3,
+      "montos": []
+    },
+    {
+      "página": 4,
+      "montos": []
+    },
+    {
+      "página": 5,
+      "montos": []
+    },
+    {
+      "página": 6,
+      "montos": [
+        {
+          "monto_$": "$12,000,000.00",
+          "entre_paréntesis": "(DOCE MILLONES DE PESOS 00/100 \nM.N.)"
+        },
+        {
+          "monto_$": "$24,000.00",
+          "entre_paréntesis": "(VEINTICUATRO MIL PESOS 00/100 \nM.N.)"
+        },
+        {
+          "monto_$": "$11,976,000.00",
+          "entre_paréntesis": "(ONCE MILLONES NOVECIENTOS SETENTA Y \nSEIS MIL PESOS 00/100 M.N.)"
+        },
+        {
+          "monto_$": "$30,000,000.00",
+          "entre_paréntesis": "(TREINTA \nMILLONES DE PESOS 00/100 M.N.)"
+        },
+        {
+          "monto_$": "$60,000.00",
+          "entre_paréntesis": "(SESENTA MIL PESOS 00/100 M.N.)"
+        },
+        {
+          "monto_$": "$29,940,000.00",
+          "entre_paréntesis": "(VEINTINUEVE \nMILLONES NOVECIENTOS CUARENTA MIL PESOS 00/100 M.N.)"
+        }
+      ]
+    },
+    {
+      "página": 7,
+      "montos": [
+        {
+          "monto_$": "$2,000.00",
+          "entre_paréntesis": "(antes de IVA)"
+        }
+      ]
+    },
+    {
+      "página": 8,
+      "montos": []
+    },
+    {
+      "página": 9,
+      "montos": []
+    },
+    {
+      "página": 10,
+      "montos": []
+    },
+    {
+      "página": 11,
+      "montos": []
+    },
+    {
+      "página": 12,
+      "montos": []
+    },
+    {
+      "página": 13,
+      "montos": []
+    },
+    {
+      "página": 14,
+      "montos": []
+    },
+    {
+      "página": 15,
+      "montos": []
+    },
+    {
+      "página": 16,
+      "montos": []
+    },
+    {
+      "página": 17,
+      "montos": []
+    },
+    {
+      "página": 18,
+      "montos": []
+    },
+    {
+      "página": 19,
+      "montos": []
+    },
+    {
+      "página": 20,
+      "montos": []
+    },
+    {
+      "página": 21,
+      "montos": []
+    },
+    {
+      "página": 22,
+      "montos": []
+    },
+    {
+      "página": 23,
+      "montos": []
+    },
+    {
+      "página": 24,
+      "montos": []
+    },
+    {
+      "página": 25,
+      "montos": []
+    },
+    {
+      "página": 26,
+      "montos": []
+    },
+    {
+      "página": 27,
+      "montos": []
+    },
+    {
+      "página": 28,
+      "montos": []
+    },
+    {
+      "página": 29,
+      "montos": []
+    },
+    {
+      "página": 30,
+      "montos": []
+    },
+    {
+      "página": 31,
+      "montos": []
+    },
+    {
+      "página": 32,
+      "montos": []
+    },
+    {
+      "página": 33,
+      "montos": []
+    },
+    {
+      "página": 34,
+      "montos": []
+    },
+    {
+      "página": 35,
+      "montos": []
+    },
+    {
+      "página": 36,
+      "montos": []
+    },
+    {
+      "página": 37,
+      "montos": []
+    },
+    {
+      "página": 38,
+      "montos": []
+    },
+    {
+      "página": 39,
+      "montos": []
+    },
+    {
+      "página": 40,
+      "montos": []
+    },
+    {
+      "página": 41,
+      "montos": []
+    },
+    {
+      "página": 42,
+      "montos": []
+    },
+    {
+      "página": 43,
+      "montos": []
+    },
+    {
+      "página": 44,
+      "montos": []
+    },
+    {
+      "página": 45,
+      "montos": []
+    },
+    {
+      "página": 46,
+      "montos": []
+    },
+    {
+      "página": 47,
+      "montos": []
+    },
+    {
+      "página": 48,
+      "montos": []
+    },
+    {
+      "página": 49,
+      "montos": []
+    },
+    {
+      "página": 50,
+      "montos": []
+    },
+    {
+      "página": 51,
+      "montos": []
+    },
+    {
+      "página": 52,
+      "montos": []
+    },
+    {
+      "página": 53,
+      "montos": []
+    },
+    {
+      "página": 54,
+      "montos": []
+    },
+    {
+      "página": 55,
+      "montos": []
+    },
+    {
+      "página": 56,
+      "montos": []
+    },
+    {
+      "página": 57,
+      "montos": []
+    },
+    {
+      "página": 58,
+      "montos": []
+    },
+    {
+      "página": 59,
+      "montos": []
+    },
+    {
+      "página": 60,
+      "montos": []
+    },
+    {
+      "página": 61,
+      "montos": []
+    },
+    {
+      "página": 62,
+      "montos": []
+    },
+    {
+      "página": 63,
+      "montos": []
+    },
+    {
+      "página": 64,
+      "montos": []
+    },
+    {
+      "página": 65,
+      "montos": []
+    },
+    {
+      "página": 66,
+      "montos": []
+    },
+    {
+      "página": 67,
+      "montos": []
+    },
+    {
+      "página": 68,
+      "montos": []
+    },
+    {
+      "página": 69,
+      "montos": []
+    },
+    {
+      "página": 70,
+      "montos": []
+    },
+    {
+      "página": 71,
+      "montos": []
+    },
+    {
+      "página": 72,
+      "montos": []
+    },
+    {
+      "página": 73,
+      "montos": []
+    },
+    {
+      "página": 74,
+      "montos": []
+    },
+    {
+      "página": 75,
+      "montos": []
+    },
+    {
+      "página": 76,
+      "montos": []
+    },
+    {
+      "página": 77,
+      "montos": []
+    },
+    {
+      "página": 78,
+      "montos": []
+    },
+    {
+      "página": 79,
+      "montos": []
+    },
+    {
+      "página": 80,
+      "montos": []
+    },
+    {
+      "página": 81,
+      "montos": []
+    },
+    {
+      "página": 82,
+      "montos": []
+    },
+    {
+      "página": 83,
+      "montos": []
+    },
+    {
+      "página": 84,
+      "montos": []
+    },
+    {
+      "página": 85,
+      "montos": []
+    },
+    {
+      "página": 86,
+      "montos": []
+    },
+    {
+      "página": 87,
+      "montos": []
+    },
+    {
+      "página": 88,
+      "montos": []
+    },
+    {
+      "página": 89,
+      "montos": []
+    },
+    {
+      "página": 90,
+      "montos": []
+    },
+    {
+      "página": 91,
+      "montos": []
+    },
+    {
+      "página": 92,
+      "montos": []
+    },
+    {
+      "página": 93,
+      "montos": []
+    },
+    {
+      "página": 94,
+      "montos": []
+    },
+    {
+      "página": 95,
+      "montos": []
+    },
+    {
+      "página": 96,
+      "montos": []
+    },
+    {
+      "página": 97,
+      "montos": []
+    },
+    {
+      "página": 98,
+      "montos": []
+    },
+    {
+      "página": 99,
+      "montos": []
+    },
+    {
+      "página": 100,
+      "montos": []
+    },
+    {
+      "página": 101,
+      "montos": []
+    },
+    {
+      "página": 102,
+      "montos": []
+    },
+    {
+      "página": 103,
+      "montos": []
+    },
+    {
+      "página": 104,
+      "montos": []
+    },
+    {
+      "página": 105,
+      "montos": []
+    },
+    {
+      "página": 106,
+      "montos": []
+    },
+    {
+      "página": 107,
+      "montos": []
+    },
+    {
+      "página": 108,
+      "montos": []
+    },
+    {
+      "página": 109,
+      "montos": []
+    },
+    {
+      "página": 110,
+      "montos": []
+    },
+    {
+      "página": 111,
+      "montos": []
+    },
+    {
+      "página": 112,
+      "montos": []
+    },
+    {
+      "página": 113,
+      "montos": []
+    },
+    {
+      "página": 114,
+      "montos": []
+    },
+    {
+      "página": 115,
+      "montos": []
+    },
+    {
+      "página": 116,
+      "montos": []
+    },
+    {
+      "página": 117,
+      "montos": []
+    },
+    {
+      "página": 118,
+      "montos": []
+    },
+    {
+      "página": 119,
+      "montos": []
+    },
+    {
+      "página": 120,
+      "montos": []
+    },
+    {
+      "página": 121,
+      "montos": []
+    },
+    {
+      "página": 122,
+      "montos": []
+    },
+    {
+      "página": 123,
+      "montos": []
+    },
+    {
+      "página": 124,
+      "montos": []
+    },
+    {
+      "página": 125,
+      "montos": []
+    },
+    {
+      "página": 126,
+      "montos": []
+    },
+    {
+      "página": 127,
+      "montos": []
+    },
+    {
+      "página": 128,
+      "montos": []
+    },
+    {
+      "página": 129,
+      "montos": []
+    },
+    {
+      "página": 130,
+      "montos": []
+    },
+    {
+      "página": 131,
+      "montos": []
+    },
+    {
+      "página": 132,
+      "montos": []
+    },
+    {
+      "página": 133,
+      "montos": []
+    },
+    {
+      "página": 134,
+      "montos": []
+    },
+    {
+      "página": 135,
+      "montos": []
+    },
+    {
+      "página": 136,
+      "montos": []
+    },
+    {
+      "página": 137,
+      "montos": []
+    },
+    {
+      "página": 138,
+      "montos": []
+    },
+    {
+      "página": 139,
+      "montos": []
+    },
+    {
+      "página": 140,
+      "montos": []
+    },
+    {
+      "página": 141,
+      "montos": []
+    },
+    {
+      "página": 142,
+      "montos": []
+    },
+    {
+      "página": 143,
+      "montos": []
+    },
+    {
+      "página": 144,
+      "montos": []
+    },
+    {
+      "página": 145,
+      "montos": []
+    },
+    {
+      "página": 146,
+      "montos": []
+    },
+    {
+      "página": 147,
+      "montos": []
+    },
+    {
+      "página": 148,
+      "montos": []
+    },
+    {
+      "página": 149,
+      "montos": []
+    },
+    {
+      "página": 150,
+      "montos": []
+    },
+    {
+      "página": 151,
+      "montos": []
+    },
+    {
+      "página": 152,
+      "montos": []
+    },
+    {
+      "página": 153,
+      "montos": []
+    },
+    {
+      "página": 154,
+      "montos": []
+    },
+    {
+      "página": 155,
+      "montos": []
+    },
+    {
+      "página": 156,
+      "montos": []
+    },
+    {
+      "página": 157,
+      "montos": []
+    },
+    {
+      "página": 158,
+      "montos": []
+    },
+    {
+      "página": 159,
+      "montos": []
+    },
+    {
+      "página": 160,
+      "montos": []
+    },
+    {
+      "página": 161,
+      "montos": []
+    },
+    {
+      "página": 162,
+      "montos": []
+    },
+    {
+      "página": 163,
+      "montos": []
+    },
+    {
+      "página": 164,
+      "montos": []
+    },
+    {
+      "página": 165,
+      "montos": []
+    },
+    {
+      "página": 166,
+      "montos": []
+    },
+    {
+      "página": 167,
+      "montos": []
+    },
+    {
+      "página": 168,
+      "montos": []
+    },
+    {
+      "página": 169,
+      "montos": []
+    },
+    {
+      "página": 170,
+      "montos": []
+    },
+    {
+      "página": 171,
+      "montos": []
+    },
+    {
+      "página": 172,
+      "montos": []
+    },
+    {
+      "página": 173,
+      "montos": []
+    },
+    {
+      "página": 174,
+      "montos": []
+    },
+    {
+      "página": 175,
+      "montos": []
+    },
+    {
+      "página": 176,
+      "montos": []
+    },
+    {
+      "página": 177,
+      "montos": []
+    },
+    {
+      "página": 178,
+      "montos": []
+    },
+    {
+      "página": 179,
+      "montos": []
+    },
+    {
+      "página": 180,
+      "montos": []
+    },
+    {
+      "página": 181,
+      "montos": []
+    },
+    {
+      "página": 182,
+      "montos": []
+    },
+    {
+      "página": 183,
+      "montos": []
+    },
+    {
+      "página": 184,
+      "montos": []
+    },
+    {
+      "página": 185,
+      "montos": []
+    },
+    {
+      "página": 186,
+      "montos": []
+    },
+    {
+      "página": 187,
+      "montos": []
+    },
+    {
+      "página": 188,
+      "montos": []
+    },
+    {
+      "página": 189,
+      "montos": []
+    },
+    {
+      "página": 190,
+      "montos": []
+    },
+    {
+      "página": 191,
+      "montos": []
+    },
+    {
+      "página": 192,
+      "montos": []
+    },
+    {
+      "página": 193,
+      "montos": []
+    },
+    {
+      "página": 194,
+      "montos": []
+    },
+    {
+      "página": 195,
+      "montos": []
+    },
+    {
+      "página": 196,
+      "montos": []
+    },
+    {
+      "página": 197,
+      "montos": []
+    },
+    {
+      "página": 198,
+      "montos": []
+    },
+    {
+      "página": 199,
+      "montos": []
+    },
+    {
+      "página": 200,
+      "montos": []
+    },
+    {
+      "página": 201,
+      "montos": []
+    },
+    {
+      "página": 202,
+      "montos": []
+    },
+    {
+      "página": 203,
+      "montos": []
+    },
+    {
+      "página": 204,
+      "montos": []
+    },
+    {
+      "página": 205,
+      "montos": []
+    },
+    {
+      "página": 206,
+      "montos": []
+    },
+    {
+      "página": 207,
+      "montos": []
+    },
+    {
+      "página": 208,
+      "montos": []
+    },
+    {
+      "página": 209,
+      "montos": []
+    },
+    {
+      "página": 210,
+      "montos": []
+    },
+    {
+      "página": 211,
+      "montos": []
+    },
+    {
+      "página": 212,
+      "montos": []
+    },
+    {
+      "página": 213,
+      "montos": []
+    },
+    {
+      "página": 214,
+      "montos": []
+    },
+    {
+      "página": 215,
+      "montos": []
+    },
+    {
+      "página": 216,
+      "montos": []
+    },
+    {
+      "página": 217,
+      "montos": []
+    },
+    {
+      "página": 218,
+      "montos": []
+    },
+    {
+      "página": 219,
+      "montos": []
+    },
+    {
+      "página": 220,
+      "montos": []
+    },
+    {
+      "página": 221,
+      "montos": []
+    },
+    {
+      "página": 222,
+      "montos": []
+    },
+    {
+      "página": 223,
+      "montos": []
+    },
+    {
+      "página": 224,
+      "montos": []
+    },
+    {
+      "página": 225,
+      "montos": []
+    },
+    {
+      "página": 226,
+      "montos": []
+    },
+    {
+      "página": 227,
+      "montos": []
+    },
+    {
+      "página": 228,
+      "montos": []
+    },
+    {
+      "página": 229,
+      "montos": []
+    },
+    {
+      "página": 230,
+      "montos": []
+    },
+    {
+      "página": 231,
+      "montos": []
+    },
+    {
+      "página": 232,
+      "montos": []
+    },
+    {
+      "página": 233,
+      "montos": []
+    },
+    {
+      "página": 234,
+      "montos": []
+    },
+    {
+      "página": 235,
+      "montos": []
+    },
+    {
+      "página": 236,
+      "montos": []
+    },
+    {
+      "página": 237,
+      "montos": []
+    },
+    {
+      "página": 238,
+      "montos": []
+    },
+    {
+      "página": 239,
+      "montos": []
+    },
+    {
+      "página": 240,
+      "montos": []
+    },
+    {
+      "página": 241,
+      "montos": []
+    },
+    {
+      "página": 242,
+      "montos": []
+    },
+    {
+      "página": 243,
+      "montos": []
+    },
+    {
+      "página": 244,
+      "montos": []
+    },
+    {
+      "página": 245,
+      "montos": []
+    },
+    {
+      "página": 246,
+      "montos": []
+    },
+    {
+      "página": 247,
+      "montos": []
+    },
+    {
+      "página": 248,
+      "montos": []
+    },
+    {
+      "página": 249,
+      "montos": []
+    },
+    {
+      "página": 250,
+      "montos": []
+    },
+    {
+      "página": 251,
+      "montos": []
+    },
+    {
+      "página": 252,
+      "montos": []
+    },
+    {
+      "página": 253,
+      "montos": []
+    },
+    {
+      "página": 254,
+      "montos": []
+    },
+    {
+      "página": 255,
+      "montos": []
+    },
+    {
+      "página": 256,
+      "montos": []
+    },
+    {
+      "página": 257,
+      "montos": []
+    },
+    {
+      "página": 258,
+      "montos": []
+    },
+    {
+      "página": 259,
+      "montos": []
+    },
+    {
+      "página": 260,
+      "montos": []
+    },
+    {
+      "página": 261,
+      "montos": []
+    },
+    {
+      "página": 262,
+      "montos": []
+    },
+    {
+      "página": 263,
+      "montos": []
+    },
+    {
+      "página": 264,
+      "montos": []
+    },
+    {
+      "página": 265,
+      "montos": []
+    },
+    {
+      "página": 266,
+      "montos": []
+    },
+    {
+      "página": 267,
+      "montos": []
+    },
+    {
+      "página": 268,
+      "montos": []
+    },
+    {
+      "página": 269,
+      "montos": []
+    },
+    {
+      "página": 270,
+      "montos": []
+    },
+    {
+      "página": 271,
+      "montos": []
+    },
+    {
+      "página": 272,
+      "montos": []
+    },
+    {
+      "página": 273,
+      "montos": []
+    },
+    {
+      "página": 274,
+      "montos": []
+    },
+    {
+      "página": 275,
+      "montos": []
+    },
+    {
+      "página": 276,
+      "montos": []
+    },
+    {
+      "página": 277,
+      "montos": []
+    },
+    {
+      "página": 278,
+      "montos": []
+    },
+    {
+      "página": 279,
+      "montos": []
+    },
+    {
+      "página": 280,
+      "montos": []
+    },
+    {
+      "página": 281,
+      "montos": []
+    },
+    {
+      "página": 282,
+      "montos": []
+    },
+    {
+      "página": 283,
+      "montos": []
+    },
+    {
+      "página": 284,
+      "montos": []
+    },
+    {
+      "página": 285,
+      "montos": []
+    },
+    {
+      "página": 286,
+      "montos": []
+    },
+    {
+      "página": 287,
+      "montos": []
+    },
+    {
+      "página": 288,
+      "montos": []
+    },
+    {
+      "página": 289,
+      "montos": []
+    },
+    {
+      "página": 290,
+      "montos": []
+    },
+    {
+      "página": 291,
+      "montos": []
+    },
+    {
+      "página": 292,
+      "montos": []
+    },
+    {
+      "página": 293,
+      "montos": []
+    },
+    {
+      "página": 294,
+      "montos": []
+    },
+    {
+      "página": 295,
+      "montos": []
+    },
+    {
+      "página": 296,
+      "montos": []
+    },
+    {
+      "página": 297,
+      "montos": []
+    },
+    {
+      "página": 298,
+      "montos": []
+    },
+    {
+      "página": 299,
+      "montos": []
+    },
+    {
+      "página": 300,
+      "montos": []
+    },
+    {
+      "página": 301,
+      "montos": []
+    },
+    {
+      "página": 302,
+      "montos": []
+    },
+    {
+      "página": 303,
+      "montos": []
+    },
+    {
+      "página": 304,
+      "montos": []
+    },
+    {
+      "página": 305,
+      "montos": []
+    },
+    {
+      "página": 306,
+      "montos": []
+    },
+    {
+      "página": 307,
+      "montos": []
+    },
+    {
+      "página": 308,
+      "montos": []
+    },
+    {
+      "página": 309,
+      "montos": []
+    },
+    {
+      "página": 310,
+      "montos": []
+    },
+    {
+      "página": 311,
+      "montos": []
+    },
+    {
+      "página": 312,
+      "montos": []
+    },
+    {
+      "página": 313,
+      "montos": []
+    },
+    {
+      "página": 314,
+      "montos": []
+    },
+    {
+      "página": 315,
+      "montos": []
+    },
+    {
+      "página": 316,
+      "montos": []
+    },
+    {
+      "página": 317,
+      "montos": []
+    },
+    {
+      "página": 318,
+      "montos": []
+    },
+    {
+      "página": 319,
+      "montos": []
+    },
+    {
+      "página": 320,
+      "montos": []
+    },
+    {
+      "página": 321,
+      "montos": []
+    },
+    {
+      "página": 322,
+      "montos": []
+    },
+    {
+      "página": 323,
+      "montos": []
+    },
+    {
+      "página": 324,
+      "montos": []
+    },
+    {
+      "página": 325,
+      "montos": []
+    },
+    {
+      "página": 326,
+      "montos": []
+    },
+    {
+      "página": 327,
+      "montos": []
+    },
+    {
+      "página": 328,
+      "montos": []
+    },
+    {
+      "página": 329,
+      "montos": []
+    },
+    {
+      "página": 330,
+      "montos": []
+    },
+    {
+      "página": 331,
+      "montos": []
+    },
+    {
+      "página": 332,
+      "montos": []
+    },
+    {
+      "página": 333,
+      "montos": []
+    },
+    {
+      "página": 334,
+      "montos": []
+    },
+    {
+      "página": 335,
+      "montos": []
+    },
+    {
+      "página": 336,
+      "montos": []
+    },
+    {
+      "página": 337,
+      "montos": []
+    },
+    {
+      "página": 338,
+      "montos": []
+    },
+    {
+      "página": 339,
+      "montos": []
+    },
+    {
+      "página": 340,
+      "montos": []
+    },
+    {
+      "página": 341,
+      "montos": []
+    },
+    {
+      "página": 342,
+      "montos": []
+    },
+    {
+      "página": 343,
+      "montos": []
+    },
+    {
+      "página": 344,
+      "montos": []
+    },
+    {
+      "página": 345,
+      "montos": []
+    },
+    {
+      "página": 346,
+      "montos": []
+    },
+    {
+      "página": 347,
+      "montos": []
+    },
+    {
+      "página": 348,
+      "montos": []
+    },
+    {
+      "página": 349,
+      "montos": []
+    },
+    {
+      "página": 350,
+      "montos": []
+    }
+  ]
+}
