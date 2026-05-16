@@ -67,3 +67,9 @@ Modulo 4: NLP/data/batch_1/
 Modulo 4: NLP/salidas_ocr/
 
 Modulo 4: NLP/data
+
+# Datasets pesados que se descargan en runtime
+Modulo 4: NLP/weatherAUS.csv
+
+# Notas / scripts personales — no van a GitHub
+videos/
