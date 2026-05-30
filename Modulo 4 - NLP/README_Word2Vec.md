@@ -41,7 +41,7 @@ Colócalos en `corpus_descargado/` o deja que el notebook liste y descargue desd
 ## Probar el modelo guardado (CLI)
 
 ```bash
-cd "Modulo 4: NLP"
+cd "Modulo 4 - NLP"
 python 10_word2vec_cli.py rey reina
 python 10_word2vec_cli.py rey - hombre + mujer
 ```

@@ -61,21 +61,21 @@ Thumbs.db
 # Módulo 5: solo local; no subir a GitHub
 Modulo 5/
 
-Modulo 4: NLP/batch_1.zip
-Modulo 4: NLP/data/batch_1.zip
-Modulo 4: NLP/data/batch_1/
-Modulo 4: NLP/batch_1/
-Modulo 4: NLP/batch*/
-Modulo 4: NLP/salidas_ocr/
-Modulo 4: NLP/output/
-Modulo 4: NLP/corpus_descargado/
-Modulo 4: NLP/corpus_kaggle/
-Modulo 4: NLP/modelo_word2vec_*.pkl
+Modulo 4 - NLP/batch_1.zip
+Modulo 4 - NLP/data/batch_1.zip
+Modulo 4 - NLP/data/batch_1/
+Modulo 4 - NLP/batch_1/
+Modulo 4 - NLP/batch*/
+Modulo 4 - NLP/salidas_ocr/
+Modulo 4 - NLP/output/
+Modulo 4 - NLP/corpus_descargado/
+Modulo 4 - NLP/corpus_kaggle/
+Modulo 4 - NLP/modelo_word2vec_*.pkl
 
-Modulo 4: NLP/data
+Modulo 4 - NLP/data
 
 # Datasets pesados que se descargan en runtime
-Modulo 4: NLP/weatherAUS.csv
+Modulo 4 - NLP/weatherAUS.csv
 
 # Notas / scripts personales — no van a GitHub
 videos/
