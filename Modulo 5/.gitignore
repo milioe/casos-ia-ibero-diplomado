@@ -1,6 +1,0 @@
-# Ignorar todo Modulo 5 salvo material publicable del diplomado
-*
-!.gitignore
-!13_LLMs.ipynb
-!expediente_Rivera_Jose.pdf
-!parthenon_athens.jpg

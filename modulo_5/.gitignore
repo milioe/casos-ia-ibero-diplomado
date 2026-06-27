@@ -1,0 +1,32 @@
+# Ignorar todo Modulo 5 salvo material publicable del diplomado
+*
+
+!.gitignore
+
+# Secrets — nunca subir (cualquier .env en este módulo)
+.env
+**/.env
+
+# Scripts y notebooks
+!01_ollama_chat.py
+!02_deepface_detectar.py
+!03_deepface_buscar.py
+!04_imageGeneration.py
+!05_prophet_acciones.ipynb
+!13_LLMs.ipynb
+!guia_ollama.md
+!requirements_proyectos.txt
+
+# Imágenes — raíz y subcarpetas (banco_rostros, etc.)
+!*.jpg
+!*.jpeg
+!*.png
+!*.webp
+!*/
+!**/*.jpg
+!**/*.jpeg
+!**/*.png
+!**/*.webp
+
+# Otros assets
+!expediente_Rivera_Jose.pdf

@@ -1,0 +1,24 @@
+# Script 01 — chat con Ollama (requiere Ollama instalado + ollama pull <modelo>)
+ollama
+
+# Script 02–03 — DeepFace (TensorFlow 2.16+ necesita tf-keras aparte)
+deepface
+opencv-python
+tf-keras
+pandas
+
+# Script 04 — segmentación (3 tipos)
+flask
+rembg[cpu]
+pillow
+ultralytics
+transformers
+torch
+numpy
+
+# Notebook 05 — portafolio + Prophet
+prophet
+yfinance
+pandas
+matplotlib
+numpy

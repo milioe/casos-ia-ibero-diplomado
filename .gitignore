@@ -58,21 +58,22 @@ env/
 # OS
 Thumbs.db
 
-Modulo 4 - NLP/batch_1.zip
-Modulo 4 - NLP/data/batch_1.zip
-Modulo 4 - NLP/data/batch_1/
-Modulo 4 - NLP/batch_1/
-Modulo 4 - NLP/batch*/
-Modulo 4 - NLP/salidas_ocr/
-Modulo 4 - NLP/output/
-Modulo 4 - NLP/corpus_descargado/
-Modulo 4 - NLP/corpus_kaggle/
-Modulo 4 - NLP/modelo_word2vec_*.pkl
+modulo_4_nlp/batch_1.zip
+modulo_4_nlp/data/batch_1.zip
+modulo_4_nlp/data/batch_1/
+modulo_4_nlp/batch_1/
+modulo_4_nlp/batch*/
+modulo_4_nlp/salidas_ocr/
+modulo_4_nlp/output/
+modulo_4_nlp/corpus_descargado/
+modulo_4_nlp/corpus_kaggle/
+modulo_4_nlp/modelo_word2vec_*.pkl
+modulo_4_nlp/*.pkl
 
-Modulo 4 - NLP/data
+modulo_4_nlp/data
 
 # Datasets pesados que se descargan en runtime
-Modulo 4 - NLP/weatherAUS.csv
+modulo_4_nlp/weatherAUS.csv
 
 # Notas / scripts personales — no van a GitHub
 videos/
