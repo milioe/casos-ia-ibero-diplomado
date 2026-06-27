@@ -22,3 +22,9 @@ yfinance
 pandas
 matplotlib
 numpy
+
+# Notebook 13 — Gemini API (LLMs)
+google-genai
+python-dotenv
+requests
+pypdf
