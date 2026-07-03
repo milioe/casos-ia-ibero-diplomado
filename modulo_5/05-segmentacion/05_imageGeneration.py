@@ -2,13 +2,13 @@
 Segmentación de imágenes — API unificada (3 tipos)
 
   pip install flask 'rembg[cpu]' pillow ultralytics transformers torch
-  python 04_imageGeneration.py
+  python 05_imageGeneration.py
 
-Imagen de ejemplo: ciclistas.jpg (varias personas — ideal para instance)
+Imagen de ejemplo: input/ciclistas.jpg (varias personas — ideal para instance)
 
-  curl -X POST -F "imagen=@ciclistas.jpg" -F "tipo=background" http://localhost:8000/segmentar -o bg.png
-  curl -X POST -F "imagen=@ciclistas.jpg" -F "tipo=semantic"   http://localhost:8000/segmentar -o sem.png
-  curl -X POST -F "imagen=@ciclistas.jpg" -F "tipo=instance"  http://localhost:8000/segmentar -o inst.png
+  curl -X POST -F "imagen=@input/ciclistas.jpg" -F "tipo=background" http://localhost:8000/segmentar -o output/bg.png
+  curl -X POST -F "imagen=@input/ciclistas.jpg" -F "tipo=semantic"   http://localhost:8000/segmentar -o output/sem.png
+  curl -X POST -F "imagen=@input/ciclistas.jpg" -F "tipo=instance"  http://localhost:8000/segmentar -o output/inst.png
 
 Tipos:
   background — quita fondo (rembg / U2Net)
@@ -28,10 +28,11 @@ from transformers import AutoImageProcessor, AutoModelForSemanticSegmentation
 from ultralytics import YOLO
 
 TIPOS = ("background", "semantic", "instance")
-EJEMPLO = "ciclistas.jpg"  # imagen de prueba incluida en el repo
+EJEMPLO = "input/ciclistas.jpg"
 PUERTO = 8000
 CARPETA = Path(__file__).parent
-SALIDA = CARPETA / "segmentada.png"
+OUTPUT = CARPETA / "output"
+SALIDA = OUTPUT / "segmentada.png"
 
 _cache: dict = {}
 app = Flask(__name__)
@@ -87,7 +88,7 @@ def segmentar_semantic(imagen: Image.Image) -> Image.Image:
 
 def _modelo_instance():
     if "instance" not in _cache:
-        _cache["instance"] = YOLO("yolov8n-seg.pt")
+        _cache["instance"] = YOLO(str(CARPETA / "yolov8n-seg.pt"))
     return _cache["instance"]
 
 
@@ -133,6 +134,7 @@ def api_segmentar():
     except Exception as e:
         return {"error": str(e)}, 500
 
+    OUTPUT.mkdir(exist_ok=True)
     salida.save(SALIDA)
     buf = BytesIO()
     salida.save(buf, format="PNG")

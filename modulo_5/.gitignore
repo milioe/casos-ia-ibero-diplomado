@@ -3,30 +3,36 @@
 
 !.gitignore
 
-# Secrets — nunca subir (cualquier .env en este módulo)
+# Ambientes virtuales locales
+.venv-*
+**/.venv-*
+
+# Proyectos independientes
+!01-llms/
+!01-llms/**
+!02-ollama/
+!02-ollama/**
+!03-nvidia/
+!03-nvidia/**
+!04-deepface/
+!04-deepface/**
+!05-segmentacion/
+!05-segmentacion/**
+!06-tools/
+!06-tools/**
+!07-prophet/
+!07-prophet/**
+
+# Material Cursor (00-Intro queda fuera del repo)
+!07-Cursor/
+!07-Cursor/**
+
+# Secrets - al final, para que el whitelist no re-incluya .env
 .env
 **/.env
+!.env.example
+!**/.env.example
 
-# Scripts y notebooks
-!01_ollama_chat.py
-!02_deepface_detectar.py
-!03_deepface_buscar.py
-!04_imageGeneration.py
-!05_prophet_acciones.ipynb
-!13_LLMs.ipynb
-!guia_ollama.md
-!requirements_proyectos.txt
-
-# Imágenes — raíz y subcarpetas (banco_rostros, etc.)
-!*.jpg
-!*.jpeg
-!*.png
-!*.webp
-!*/
-!**/*.jpg
-!**/*.jpeg
-!**/*.png
-!**/*.webp
-
-# Otros assets
-!expediente_Rivera_Jose.pdf
+# macOS
+.DS_Store
+**/.DS_Store
