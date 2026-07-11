@@ -23,9 +23,12 @@
 !07-prophet/
 !07-prophet/**
 
+!09-rag-competencia/
+!09-rag-competencia/**
+
 # Material Cursor (00-Intro queda fuera del repo)
-!07-Cursor/
-!07-Cursor/**
+!08-Cursor/
+!08-Cursor/**
 
 # Secrets - al final, para que el whitelist no re-incluya .env
 .env

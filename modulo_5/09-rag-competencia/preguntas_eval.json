@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "pregunta": "oye cuantos dias puedo hacer home office yo soy nivel 2",
+    "respuesta_esperada": "3 dias por semana desde marzo 2025 (COM-RH-2025-003). Antes eran 2.",
+    "fuente": "COM-RH-2025-003_Cambio_Remoto.pdf"
+  },
+  {
+    "id": 2,
+    "pregunta": "viaje a monterrey 3 dias cuanto puedo gastar en comida",
+    "respuesta_esperada": "820 MXN por dia de comida en MTY (grafica/topes en Guia_Viaticos). Pedir recibos y llenar VF-22.",
+    "fuente": "Guia_Viaticos_MX_2024.pdf"
+  },
+  {
+    "id": 3,
+    "pregunta": "no me conecta la vpn ya reinicie y nada",
+    "respuesta_esperada": "Abrir ticket en ServiceDesk, categoria Access - VPN, con captura del error. No mandar mail directo a IT.",
+    "fuente": "IT_Onboarding_SOP_v3.pdf"
+  },
+  {
+    "id": 4,
+    "pregunta": "entre en marzo me pagan aguinaldo completo o como",
+    "respuesta_esperada": "Se prorratea, no es el monto completo (si entras antes de julio, por meses trabajados).",
+    "fuente": "Benefits_FAQ_EN-ES.pdf"
+  },
+  {
+    "id": 5,
+    "pregunta": "le puedo pasar al cliente sus datos por whats para que sea mas rapido",
+    "respuesta_esperada": "No. No usar WhatsApp ni Telegram para datos de clientes/PII. Usar Teams o correo corporativo.",
+    "fuente": "InfoSec_Policy_2024.pdf"
+  },
+  {
+    "id": 6,
+    "pregunta": "tengo un gasto de 20 mil pesos quien lo tiene que autorizar",
+    "respuesta_esperada": "Regional Director (gastos mayores a 15,000 MXN).",
+    "fuente": "Guia_Viaticos_MX_2024.pdf / IT_Onboarding_SOP_v3.pdf (org chart)"
+  },
+  {
+    "id": 7,
+    "pregunta": "sigue igual lo del remoto que el ano pasado o ya cambio algo",
+    "respuesta_esperada": "Cambio en marzo 2025: N2 paso de 2 a 3 dias remotos. Ver COM-RH-2025-003.",
+    "fuente": "COM-RH-2025-003_Cambio_Remoto.pdf"
+  },
+  {
+    "id": 8,
+    "pregunta": "soy externo puedo pedir home office o eso no aplica",
+    "respuesta_esperada": "No aplica. Contractors: 0 dias remotos salvo excepcion escrita.",
+    "fuente": "COM-RH-2025-003_Cambio_Remoto.pdf / Manual_Colaborador_2024_ES.pdf"
+  },
+  {
+    "id": 9,
+    "pregunta": "cdmx cuanto es el tope de comida en viaticos es 800 o 850",
+    "respuesta_esperada": "850 MXN/dia en CDMX (grafica 2024). El handbook 2023 dice 800 pero esta desactualizado.",
+    "fuente": "Guia_Viaticos_MX_2024.pdf"
+  },
+  {
+    "id": 10,
+    "pregunta": "monterrey 3 dias que papeles necesito no me acuerdo",
+    "respuesta_esperada": "Formulario VF-22, recibos de comida detallados, recibo de hotel.",
+    "fuente": "Guia_Viaticos_MX_2024.pdf"
+  }
+]
