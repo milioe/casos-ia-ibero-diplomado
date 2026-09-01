@@ -64,6 +64,8 @@ yolov8*.pt
 # OS
 Thumbs.db
 
+# Modulo 4 — solo el notebook 01 va a GitHub (ver modulo_4_nlp/.gitignore
+# para el detalle; estas reglas cubren datos/salidas locales generados en runtime)
 modulo_4_nlp/batch_1.zip
 modulo_4_nlp/data/batch_1.zip
 modulo_4_nlp/data/batch_1/
@@ -75,14 +77,16 @@ modulo_4_nlp/corpus_descargado/
 modulo_4_nlp/corpus_kaggle/
 modulo_4_nlp/modelo_word2vec_*.pkl
 modulo_4_nlp/*.pkl
-
 modulo_4_nlp/data
-
-# Datasets pesados que se descargan en runtime
 modulo_4_nlp/weatherAUS.csv
 
-# Modulo 5 — material local del intro (no va a GitHub)
-modulo_5/00-Intro/
+# Modulo 5 — no va a GitHub por ahora (nueva generacion arranca solo con modulo 4)
+/modulo_5/
+
+# Material de la clase anterior — se archiva fuera de main
+/lecture_7_es.md
+/lecture_7_es.pdf
+/lecture_7_es.pptx
 
 # Notas / scripts personales — no van a GitHub
 videos/

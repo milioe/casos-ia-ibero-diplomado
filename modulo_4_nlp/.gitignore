@@ -1,0 +1,5 @@
+# Ignorar todo modulo 4 salvo el notebook publicable para la nueva generacion
+*
+
+!.gitignore
+!01_Texto_y_maquina.ipynb

@@ -1,7 +1,0 @@
-flask
-rembg[cpu]
-pillow
-ultralytics
-transformers
-torch
-numpy

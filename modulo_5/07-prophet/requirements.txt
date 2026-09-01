@@ -1,6 +1,0 @@
-prophet
-yfinance
-pandas
-matplotlib
-numpy
-jupyter
