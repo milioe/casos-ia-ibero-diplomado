@@ -15,6 +15,7 @@ Qué puede hacer DeepFace (además de edad / género / emoción):
 
 import cv2
 from deepface import DeepFace
+from deepface.modules.exceptions import SpoofDetected
 
 DETECTOR = "opencv"
 ACCIONES = ["age", "gender", "emotion"]  # opcional: agrega "race"
@@ -39,13 +40,22 @@ while True:
 
     if tecla == ord(" "):
         print("Analizando...")
-        resultados = DeepFace.analyze(
-            img_path=frame,
-            actions=ACCIONES,
-            detector_backend=DETECTOR,
-            enforce_detection=False,
-            anti_spoofing=ANTI_SPOOFING,
-        )
+        try:
+            resultados = DeepFace.analyze(
+                img_path=frame,
+                actions=ACCIONES,
+                detector_backend=DETECTOR,
+                enforce_detection=False,
+                anti_spoofing=ANTI_SPOOFING,
+            )
+        except SpoofDetected:
+            # DeepFace aborta el analyze cuando marca spoof; no devolvemos edad/emoción.
+            print("  Anti-spoof: SPOOF (DeepFace bloqueó el análisis)\n")
+            cv2.putText(frame, "SPOOF", (20, 40), cv2.FONT_HERSHEY_SIMPLEX, 1.0, (0, 0, 255), 2)
+            cv2.imshow("DeepFace", frame)
+            cv2.waitKey(0)
+            continue
+
         if isinstance(resultados, dict):
             resultados = [resultados]
 

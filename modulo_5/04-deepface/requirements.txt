@@ -1,5 +1,5 @@
 deepface
-opencv-python
+opencv-python>=4.8,<5
 tf-keras
 pandas
 torch

@@ -7,7 +7,9 @@ Segmentación de imágenes — API unificada (3 tipos)
 Imagen de ejemplo: input/ciclistas.jpg (varias personas — ideal para instance)
 
   curl -X POST -F "imagen=@input/ciclistas.jpg" -F "tipo=background" http://localhost:8000/segmentar -o output/bg.png
+
   curl -X POST -F "imagen=@input/ciclistas.jpg" -F "tipo=semantic"   http://localhost:8000/segmentar -o output/sem.png
+  
   curl -X POST -F "imagen=@input/ciclistas.jpg" -F "tipo=instance"  http://localhost:8000/segmentar -o output/inst.png
 
 Tipos:
