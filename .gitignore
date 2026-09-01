@@ -64,21 +64,21 @@ yolov8*.pt
 # OS
 Thumbs.db
 
-# Modulo 4 — solo el notebook 01 va a GitHub (ver modulo_4_nlp/.gitignore
+# Modulo 4 — solo el notebook 01 va a GitHub (ver modulo_4/.gitignore
 # para el detalle; estas reglas cubren datos/salidas locales generados en runtime)
-modulo_4_nlp/batch_1.zip
-modulo_4_nlp/data/batch_1.zip
-modulo_4_nlp/data/batch_1/
-modulo_4_nlp/batch_1/
-modulo_4_nlp/batch*/
-modulo_4_nlp/salidas_ocr/
-modulo_4_nlp/output/
-modulo_4_nlp/corpus_descargado/
-modulo_4_nlp/corpus_kaggle/
-modulo_4_nlp/modelo_word2vec_*.pkl
-modulo_4_nlp/*.pkl
-modulo_4_nlp/data
-modulo_4_nlp/weatherAUS.csv
+modulo_4/batch_1.zip
+modulo_4/data/batch_1.zip
+modulo_4/data/batch_1/
+modulo_4/batch_1/
+modulo_4/batch*/
+modulo_4/salidas_ocr/
+modulo_4/output/
+modulo_4/corpus_descargado/
+modulo_4/corpus_kaggle/
+modulo_4/modelo_word2vec_*.pkl
+modulo_4/*.pkl
+modulo_4/data
+modulo_4/weatherAUS.csv
 
 # Modulo 5 — no va a GitHub por ahora (nueva generacion arranca solo con modulo 4)
 /modulo_5/
