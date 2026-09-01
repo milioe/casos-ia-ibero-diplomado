@@ -1,5 +1,7 @@
-# Ignorar todo modulo 4 salvo el notebook publicable para la nueva generacion
+# Ignorar todo modulo 4 salvo el material publicable para la nueva generacion
 *
 
 !.gitignore
 !01_Texto_y_maquina.ipynb
+!02-PDF_reporte.ipynb
+!ey_100_casos_rentables_ia_2026.pdf
