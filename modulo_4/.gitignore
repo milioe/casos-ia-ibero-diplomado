@@ -6,14 +6,14 @@
 !02-PDF_reporte.ipynb
 !03-OCRfacturas.ipynb
 
-# public/ = lo que los alumnos suben a Colab (mismo nombre en local y ahi).
+# content/ = lo que los alumnos suben a Colab (mismo nombre en local y ahi).
 # Todo lo que hay adentro es material propio (facturas inventadas para
 # la clase, no datos reales de terceros), asi que va al repo completo.
-!public/
-!public/ey_100_casos_rentables_ia_2026.pdf
-!public/fakeine.jpeg
-!public/factura_digital.pdf
-!public/factura_1.pdf
-!public/factura_2.pdf
-!public/factura_3.pdf
-!public/comparacion_metodos_ocr.png
+!content/
+!content/ey_100_casos_rentables_ia_2026.pdf
+!content/fakeine.jpeg
+!content/factura_digital.pdf
+!content/factura_1.pdf
+!content/factura_2.pdf
+!content/factura_3.pdf
+!content/comparacion_metodos_ocr.png
