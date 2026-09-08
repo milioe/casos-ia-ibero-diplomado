@@ -90,3 +90,9 @@ modulo_4/weatherAUS.csv
 
 # Notas / scripts personales — no van a GitHub
 videos/
+
+# Transcripciones de clase (audio → Azure STT)
+/2026-09-05 09-04-33.md
+/2026-09-05 09-04-33.json
+/*.transcript.md
+/*.transcript.json
