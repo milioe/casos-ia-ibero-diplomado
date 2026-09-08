@@ -5,4 +5,10 @@
 !01_Texto_y_maquina.ipynb
 !02-PDF_reporte.ipynb
 !03-OCRfacturas.ipynb
-!ey_100_casos_rentables_ia_2026.pdf
+
+# public/ = lo que los alumnos suben a Colab. Solo el material que es
+# nuestro va al repo; las facturas de Kaggle se quedan fuera (son de
+# un tercero) y cada quien las sube a su propia carpeta public/ local.
+!public/
+!public/ey_100_casos_rentables_ia_2026.pdf
+!public/fakeine.jpeg
