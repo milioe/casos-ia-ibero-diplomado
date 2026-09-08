@@ -7,8 +7,8 @@ Material del módulo en la carpeta [`modulo_4`](modulo_4/). Cada notebook incluy
 | Notebook | Descripción breve |
 |----------|-------------------|
 | [`01_Texto_y_maquina.ipynb`](modulo_4/01_Texto_y_maquina.ipynb) | Cómo "ve" la máquina el texto: caracteres, Unicode, palabras, vocabulario y límites de representaciones clásicas. |
-| [`02-PDF_reporte.ipynb`](modulo_4/02-PDF_reporte.ipynb) | Extraer texto de un PDF con capa de texto digital (`pypdf`) y cerrar mostrando qué pasa cuando el documento es en realidad una foto. |
-| [`03-OCRfacturas.ipynb`](modulo_4/03-OCRfacturas.ipynb) | Comparar 4 formas de sacarle los datos a una factura-imagen: Tesseract, EasyOCR, PaddleOCR y un modelo de Hugging Face (VLM). Incluye una comparación de PDF renderizado vs. foto del PDF, y un bonus opcional con una identificación. |
+| [`02-PDF_reporte.ipynb`](modulo_4/02-PDF_reporte.ipynb) | **Parsing** de un PDF con texto digital (`pypdf`) y **Split** por página. Cierra mostrando que el parsing falla cuando el documento es en realidad una imagen. |
+| [`03-OCRfacturas.ipynb`](modulo_4/03-OCRfacturas.ipynb) | **Parsing** (Tesseract, EasyOCR, PaddleOCR) y **Extraction** (regex, Falcon-OCR, LlamaExtract) sobre la misma factura-imagen — 5 métodos, comparados a simple vista. Incluye PDF renderizado vs. foto del PDF, y un bonus opcional con una identificación. |
 
 ## Contacto
 
