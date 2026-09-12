@@ -8,7 +8,8 @@ Material del módulo en la carpeta [`modulo_4`](modulo_4/). Cada notebook incluy
 |----------|-------------------|
 | [`01_Texto_y_maquina.ipynb`](modulo_4/01_Texto_y_maquina.ipynb) | Cómo "ve" la máquina el texto: caracteres, Unicode, palabras, vocabulario y límites de representaciones clásicas. |
 | [`02-PDF_reporte.ipynb`](modulo_4/02-PDF_reporte.ipynb) | **Parsing** de un PDF con texto digital (`pypdf`) y **Split** por página. Cierra mostrando que el parsing falla cuando el documento es en realidad una imagen. |
-| [`03-OCRfacturas.ipynb`](modulo_4/03-OCRfacturas.ipynb) | **Parsing** (Tesseract, EasyOCR, PaddleOCR) y **Extraction** (regex, Falcon-OCR, LlamaExtract) sobre la misma factura-imagen — 5 métodos, comparados a simple vista. Incluye PDF renderizado vs. foto del PDF, y un bonus opcional con una identificación. |
+| [`03-OCRfacturas.ipynb`](modulo_4/03-OCRfacturas.ipynb) | **Parsing** (Tesseract, EasyOCR) y **Extraction** (regex, Falcon-OCR, LlamaExtract) sobre la misma factura — 4 métodos, comparados a simple vista, más una guía de "¿cuál me conviene?". |
+| [`04_TF-IDF.ipynb`](modulo_4/04_TF-IDF.ipynb) | TF-IDF desde cero (TF, IDF, y el vector final) sobre tickets de soporte, y comparación contra `TfidfVectorizer` de scikit-learn. |
 
 ## Contacto
 
