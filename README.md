@@ -10,6 +10,8 @@ Material del módulo en la carpeta [`modulo_4`](modulo_4/). Cada notebook incluy
 | [`02-PDF_reporte.ipynb`](modulo_4/02-PDF_reporte.ipynb) | **Parsing** de un PDF con texto digital (`pypdf`) y **Split** por página. Cierra mostrando que el parsing falla cuando el documento es en realidad una imagen. |
 | [`03-OCRfacturas.ipynb`](modulo_4/03-OCRfacturas.ipynb) | **Parsing** (Tesseract, EasyOCR) y **Extraction** (regex, Falcon-OCR, LlamaExtract) sobre la misma factura — 4 métodos, comparados a simple vista, más una guía de "¿cuál me conviene?". |
 | [`04_TF-IDF.ipynb`](modulo_4/04_TF-IDF.ipynb) | TF-IDF desde cero (TF, IDF, y el vector final) sobre tickets de soporte, y comparación contra `TfidfVectorizer` de scikit-learn. |
+| [`05_Jaccard_Coseno.ipynb`](modulo_4/05_Jaccard_Coseno.ipynb) | Similitud de Jaccard y coseno para medir qué tan parecidos son dos textos, sobre el mismo corpus de tickets de soporte. |
+| [`06_Intro_redes_neuronales.ipynb`](modulo_4/06_Intro_redes_neuronales.ipynb) | Redes neuronales desde lo más chico posible (un perceptrón) hasta un caso real: predecir lluvia con el dataset *Rain in Australia*. |
 
 ## Contacto
 

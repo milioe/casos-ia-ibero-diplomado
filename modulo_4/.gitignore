@@ -6,6 +6,8 @@
 !02-PDF_reporte.ipynb
 !03-OCRfacturas.ipynb
 !04_TF-IDF.ipynb
+!05_Jaccard_Coseno.ipynb
+!06_Intro_redes_neuronales.ipynb
 
 # Archivos sueltos junto al notebook (asi caen en Colab al subirlos por
 # el panel de archivos: van directo a /content/, no a una subcarpeta).
