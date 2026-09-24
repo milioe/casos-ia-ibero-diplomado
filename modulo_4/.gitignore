@@ -8,6 +8,12 @@
 !04_TF-IDF.ipynb
 !05_Jaccard_Coseno.ipynb
 !06_Intro_redes_neuronales.ipynb
+!07_Word2Vec.ipynb
+!08_Word2Vec_scaling.ipynb
+
+# TSV para projector.tensorflow.org (salida del notebook 08)
+!embedding_projector/
+!embedding_projector/*
 
 # Archivos sueltos junto al notebook (asi caen en Colab al subirlos por
 # el panel de archivos: van directo a /content/, no a una subcarpeta).

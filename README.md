@@ -12,6 +12,8 @@ Material del módulo en la carpeta [`modulo_4`](modulo_4/). Cada notebook incluy
 | [`04_TF-IDF.ipynb`](modulo_4/04_TF-IDF.ipynb) | TF-IDF desde cero (TF, IDF, y el vector final) sobre tickets de soporte, y comparación contra `TfidfVectorizer` de scikit-learn. |
 | [`05_Jaccard_Coseno.ipynb`](modulo_4/05_Jaccard_Coseno.ipynb) | Similitud de Jaccard y coseno para medir qué tan parecidos son dos textos, sobre el mismo corpus de tickets de soporte. |
 | [`06_Intro_redes_neuronales.ipynb`](modulo_4/06_Intro_redes_neuronales.ipynb) | Redes neuronales desde lo más chico posible (un perceptrón) hasta un caso real: predecir lluvia con el dataset *Rain in Australia*. |
+| [`07_Word2Vec.ipynb`](modulo_4/07_Word2Vec.ipynb) | Word2Vec a mano con Keras (Skip-gram, ventana 1) sobre "el usuario no puede transferir en la app", CBOW vs Skip-gram y negative sampling. |
+| [`08_Word2Vec_scaling.ipynb`](modulo_4/08_Word2Vec_scaling.ipynb) | Word2Vec con `gensim` sobre un corpus grande en español: vecinos, analogías, PCA 3D y export a Embedding Projector. |
 
 ## Contacto
 
