@@ -14,6 +14,9 @@ Material del módulo en la carpeta [`modulo_4`](modulo_4/). Cada notebook incluy
 | [`06_Intro_redes_neuronales.ipynb`](modulo_4/06_Intro_redes_neuronales.ipynb) | Redes neuronales desde lo más chico posible (un perceptrón) hasta un caso real: predecir lluvia con el dataset *Rain in Australia*. |
 | [`07_Word2Vec.ipynb`](modulo_4/07_Word2Vec.ipynb) | Word2Vec a mano con Keras (Skip-gram, ventana 1) sobre "el usuario no puede transferir en la app", CBOW vs Skip-gram y negative sampling. |
 | [`08_Word2Vec_scaling.ipynb`](modulo_4/08_Word2Vec_scaling.ipynb) | Word2Vec con `gensim` sobre un corpus grande en español: vecinos, analogías, PCA 3D y export a Embedding Projector. |
+| [`09_Pretrained_Embedding.ipynb`](modulo_4/09_Pretrained_Embedding.ipynb) | Embeddings preentrenados de texto: Gemini y NVIDIA Nemotron-3-Embed, para buscar en una lista de FAQ con una pregunta. |
+| [`10_Image_Embeddings.ipynb`](modulo_4/10_Image_Embeddings.ipynb) | Embeddings de imágenes con CLIP: texto e imagen en el mismo espacio vectorial, y clasificación zero-shot. |
+| [`11_RAG_fundamentos.ipynb`](modulo_4/11_RAG_fundamentos.ipynb) | RAG de principio a fin sobre un PDF real: chunks por página, embeddings, índice FAISS y consultas. |
 
 ## Contacto
 

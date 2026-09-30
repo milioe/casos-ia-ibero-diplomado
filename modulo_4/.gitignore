@@ -10,6 +10,9 @@
 !06_Intro_redes_neuronales.ipynb
 !07_Word2Vec.ipynb
 !08_Word2Vec_scaling.ipynb
+!09_Pretrained_Embedding.ipynb
+!10_Image_Embeddings.ipynb
+!11_RAG_fundamentos.ipynb
 
 # TSV para projector.tensorflow.org (salida del notebook 08)
 !embedding_projector/
