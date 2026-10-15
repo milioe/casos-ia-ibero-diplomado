@@ -17,6 +17,7 @@ Material del módulo en la carpeta [`modulo_4`](modulo_4/). Cada notebook incluy
 | [`09_Pretrained_Embedding.ipynb`](modulo_4/09_Pretrained_Embedding.ipynb) | Embeddings preentrenados de texto: Gemini y NVIDIA Nemotron-3-Embed, para buscar en una lista de FAQ con una pregunta. |
 | [`10_Image_Embeddings.ipynb`](modulo_4/10_Image_Embeddings.ipynb) | Embeddings de imágenes con CLIP: texto e imagen en el mismo espacio vectorial, y clasificación zero-shot. |
 | [`11_RAG_fundamentos.ipynb`](modulo_4/11_RAG_fundamentos.ipynb) | RAG de principio a fin sobre un PDF real: chunks por página, embeddings, índice FAISS y consultas. |
+| [`12_Capacidades_LLM.ipynb`](modulo_4/12_Capacidades_LLM.ipynb) | Todo lo que sabe hacer un LLM moderno, con Gemini (gratis): razonamiento, visión, video por frames, audio, tools y Structured Outputs. |
 
 ## Contacto
 

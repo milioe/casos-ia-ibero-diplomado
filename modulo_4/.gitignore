@@ -13,6 +13,7 @@
 !09_Pretrained_Embedding.ipynb
 !10_Image_Embeddings.ipynb
 !11_RAG_fundamentos.ipynb
+!12_Capacidades_LLM.ipynb
 
 # TSV para projector.tensorflow.org (salida del notebook 08)
 !embedding_projector/
@@ -28,3 +29,8 @@
 !factura_2.pdf
 !factura_3.pdf
 !comparacion_metodos_ocr.png
+
+# Assets del notebook 12 (recuperados de la rama nov2025)
+!calorias.jpeg
+!supermarket.mp4
+!Greece.mp3
